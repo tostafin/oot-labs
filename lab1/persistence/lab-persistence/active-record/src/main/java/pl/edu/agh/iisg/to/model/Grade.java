@@ -21,8 +21,8 @@ public class Grade {
     	String gradeStudentSql = "INSERT INTO grade (grade, student_id, course_id) VALUES (?, ?, ?)";
         Object[] args = {
                 grade,
-                student.getId(),
-                course.getId()
+                student.id(),
+                course.id()
         };
 
         try {

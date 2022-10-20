@@ -28,10 +28,6 @@ public class Course {
         this.name = name;
     }
 
-    public int getId() {
-        return id;
-    }
-
     public static Optional<Course> create(final String name) {
     	String insertSql = "INSERT INTO course (name) VALUES (?);";
     	Object[] args = {
@@ -65,7 +61,7 @@ public class Course {
     public boolean enrollStudent(final Student student) {
         String enrollStudentSql = "INSERT INTO student_course (student_id, course_id) VALUES (?, ?);";
         Object[] args = {
-                student.getId(),
+                student.id(),
                 this.id
         };
 
@@ -80,22 +76,46 @@ public class Course {
     }
 
     public List<Student> studentList() {
-    	String findStudentListSql ="SELECT * FROM student_course WHERE course_id = (?);";
+        // 1st approach
+//    	String findStudentListSql ="SELECT * FROM student_course WHERE course_id = (?);";
+//        Object[] args = {
+//                this.id
+//        };
+//
+//    	List<Student> resultList = new LinkedList<>();
+//        try {
+//            ResultSet rs = QueryExecutor.read(findStudentListSql, args);
+//            while (rs.next()) {
+//                if (Student.findById(rs.getInt("student_id")).isPresent()) {
+//                    resultList.add(Student.findById(rs.getInt("student_id")).get());
+//                }
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//
+//    	return resultList;
+
+        // 2nd approach (faster)
+        String findStudentListSql ="" +
+                "SELECT s.id, s.first_name, s.last_name, s.index_number " +
+                "FROM student_course AS s_c JOIN student AS s ON s_c.student_id = s.id " +
+                "WHERE s_c.course_id = (?);";
         Object[] args = {
                 this.id
         };
 
-    	List<Student> resultList = new LinkedList<>();
+        List<Student> resultList = new LinkedList<>();
         try {
             ResultSet rs = QueryExecutor.read(findStudentListSql, args);
             while (rs.next()) {
-                resultList.add(Student.findById(rs.getInt("student_id")).get());
-            }
+                    resultList.add(new Student(rs.getInt("id"), rs.getString("first_name"), rs.getString("last_name"), rs.getInt("index_number")));
+                }
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-    	return resultList;
+        return resultList;
     }
     
     public List<Student> cachedStudentsList() {

@@ -25,10 +25,6 @@ public class Student {
         this.indexNumber = indexNumber;
     }
 
-    public int getId() {
-        return id;
-    }
-
     public static Optional<Student> create(final String firstName, final String lastName, final int indexNumber) {
         String sql = "INSERT INTO student (first_name, last_name, index_number) VALUES (?, ?, ?);";
 
@@ -81,11 +77,23 @@ public class Student {
     }
 
     public Map<Course, Float> createReport() {
-        String sql = "SELECT course_id, AVG(grade) as grade_avg FROM grade WHERE student_id = ? GROUP_BY course_id;";
+        String sql = "SELECT course_id, AVG(grade) AS grade_avg FROM grade WHERE student_id = ? GROUP BY course_id;";
         Object[] args = {
                 this.id
         };
-        Map<Course, Float> res = new HashMap<>();
+        Map<Course, Float> reportMap = new HashMap<>();
+
+        try {
+            ResultSet rs = QueryExecutor.read(sql, args);
+            while (rs.next()) {
+                if (Course.findById(rs.getInt("course_id")).isPresent()) {
+                    reportMap.put(Course.findById(rs.getInt("course_id")).get(), rs.getFloat("grade_avg"));
+                }
+            }
+            return reportMap;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return Collections.emptyMap();
     }
 

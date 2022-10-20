@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.749s</div>
+<div class="counter">0.256s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">90%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,87 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="createReportTest()"></a>
-<h3 class="failures">createReportTest()</h3>
-<span class="code">
-<pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Float.floatValue()&quot; because the return value of &quot;java.util.Map.get(Object)&quot; is null
-	at pl.edu.agh.iisg.to.ActiveRecordTest.createReportTest(ActiveRecordTest.java:206)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:515)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:105)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -153,80 +79,80 @@
 </thead>
 <tr>
 <td class="success">cachedCourseStudentListTest()</td>
-<td class="success">0.081s</td>
+<td class="success">0.030s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">courseStudentListTest()</td>
-<td class="success">0.088s</td>
+<td class="success">0.028s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">createCourseTest()</td>
-<td class="success">0.057s</td>
+<td class="success">0.021s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">createReportTest()</td>
-<td class="failures">0.129s</td>
-<td class="failures">failed</td>
+<td class="success">createReportTest()</td>
+<td class="success">0.036s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">createStudentTest()</td>
-<td class="success">0.070s</td>
+<td class="success">0.024s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">enrollStudentTest()</td>
-<td class="success">0.113s</td>
+<td class="success">0.046s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findCourseTest()</td>
-<td class="success">0.042s</td>
+<td class="success">0.016s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findStudentIndexTest()</td>
-<td class="success">0.043s</td>
+<td class="success">0.015s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">findStudentTest()</td>
-<td class="success">0.066s</td>
+<td class="success">0.019s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">gradeStudentTest()</td>
-<td class="success">0.060s</td>
+<td class="success">0.021s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+<pre>paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
 INFO: Loading driver
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
 INFO: Connection created
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.connection.ConnectionProvider close
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.connection.ConnectionProvider close
 INFO: Closing connection
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
 INFO: Loading driver
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.connection.ConnectionProvider init
 INFO: Connection created
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
 INFO: Creating table Student
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
 INFO: Creating table Course
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
 INFO: Creating table Student_Course
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
 INFO: Creating table Grade
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
 java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (UNIQUE constraint failed: student_course.student_id, student_course.course_id)
 	at org.sqlite.core.DB.newSQLException(DB.java:890)
@@ -234,7 +160,7 @@ java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (U
 	at org.sqlite.core.DB.execute(DB.java:810)
 	at org.sqlite.jdbc3.JDBC3PreparedStatement.execute(JDBC3PreparedStatement.java:50)
 	at pl.edu.agh.iisg.to.executor.QueryExecutor.createAndObtainId(QueryExecutor.java:65)
-	at pl.edu.agh.iisg.to.model.Course.enrollStudent(Course.java:73)
+	at pl.edu.agh.iisg.to.model.Course.enrollStudent(Course.java:69)
 	at pl.edu.agh.iisg.to.ActiveRecordTest.enrollStudentTest(ActiveRecordTest.java:115)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -295,9 +221,9 @@ java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (U
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
 java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (UNIQUE constraint failed: student.index_number)
 	at org.sqlite.core.DB.newSQLException(DB.java:890)
@@ -305,7 +231,7 @@ java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (U
 	at org.sqlite.core.DB.execute(DB.java:810)
 	at org.sqlite.jdbc3.JDBC3PreparedStatement.execute(JDBC3PreparedStatement.java:50)
 	at pl.edu.agh.iisg.to.executor.QueryExecutor.createAndObtainId(QueryExecutor.java:65)
-	at pl.edu.agh.iisg.to.model.Student.create(Student.java:42)
+	at pl.edu.agh.iisg.to.model.Student.create(Student.java:39)
 	at pl.edu.agh.iisg.to.ActiveRecordTest.createStudentTest(ActiveRecordTest.java:48)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -366,38 +292,30 @@ java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (U
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
-INFO: Query: SELECT * FROM student_course WHERE course_id = (?); executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT s.id, s.first_name, s.last_name, s.index_number FROM student_course AS s_c JOIN student AS s ON s_c.student_id = s.id WHERE s_c.course_id = (?); executed.
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
-INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
-INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
-INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
-INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE index_number = ? executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:31 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
 java.sql.SQLException: ResultSet closed
 	at org.sqlite.core.CoreResultSet.checkOpen(CoreResultSet.java:69)
 	at org.sqlite.jdbc3.JDBC3ResultSet.findColumn(JDBC3ResultSet.java:38)
 	at org.sqlite.jdbc3.JDBC3ResultSet.getInt(JDBC3ResultSet.java:395)
-	at pl.edu.agh.iisg.to.model.Student.find(Student.java:75)
-	at pl.edu.agh.iisg.to.model.Student.findById(Student.java:68)
+	at pl.edu.agh.iisg.to.model.Student.find(Student.java:72)
+	at pl.edu.agh.iisg.to.model.Student.findById(Student.java:65)
 	at pl.edu.agh.iisg.to.ActiveRecordTest.findStudentTest(ActiveRecordTest.java:63)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -458,15 +376,25 @@ java.sql.SQLException: ResultSet closed
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT course_id, AVG(grade) AS grade_avg FROM grade WHERE student_id = ? GROUP BY course_id; executed.
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT * FROM course WHERE id = ? executed.
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
 java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (UNIQUE constraint failed: course.name)
 	at org.sqlite.core.DB.newSQLException(DB.java:890)
@@ -474,7 +402,7 @@ java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (U
 	at org.sqlite.core.DB.execute(DB.java:810)
 	at org.sqlite.jdbc3.JDBC3PreparedStatement.execute(JDBC3PreparedStatement.java:50)
 	at pl.edu.agh.iisg.to.executor.QueryExecutor.createAndObtainId(QueryExecutor.java:65)
-	at pl.edu.agh.iisg.to.model.Course.create(Course.java:42)
+	at pl.edu.agh.iisg.to.model.Course.create(Course.java:38)
 	at pl.edu.agh.iisg.to.ActiveRecordTest.createCourseTest(ActiveRecordTest.java:87)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -535,31 +463,23 @@ java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (U
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
-INFO: Query: SELECT * FROM student_course WHERE course_id = (?); executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+INFO: Query: SELECT s.id, s.first_name, s.last_name, s.index_number FROM student_course AS s_c JOIN student AS s ON s_c.student_id = s.id WHERE s_c.course_id = (?); executed.
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
-INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
-INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
-INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
-INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 07, 2022 7:42:32 PM pl.edu.agh.iisg.to.connection.ConnectionProvider close
+paź 20, 2022 7:05:19 PM pl.edu.agh.iisg.to.connection.ConnectionProvider close
 INFO: Closing connection
 </pre>
 </span>
@@ -572,7 +492,7 @@ INFO: Closing connection
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at Oct 7, 2022, 7:42:32 PM</p>
+<a href="http://www.gradle.org">Gradle 7.2</a> at 20 paź 2022, 19:05:19</p>
 </div>
 </div>
 </body>
