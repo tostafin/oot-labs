@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pl.edu.agh.school.StudentTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-21T16:46:07" hostname="d17-427-pc-07.ipa.ii.agh.edu.pl" time="0.021">
+  <properties/>
+  <testcase name="testGetName()" classname="pl.edu.agh.school.StudentTest" time="0.018"/>
+  <testcase name="testGetSchedule()" classname="pl.edu.agh.school.StudentTest" time="0.001"/>
+  <testcase name="testSetSchoolClass()" classname="pl.edu.agh.school.StudentTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

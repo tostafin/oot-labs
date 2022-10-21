@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pl.edu.agh.school.SchoolClassTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-10-21T16:46:07" hostname="d17-427-pc-07.ipa.ii.agh.edu.pl" time="0.037">
+  <properties/>
+  <testcase name="testMeetSearchCriteria()" classname="pl.edu.agh.school.SchoolClassTest" time="0.02"/>
+  <testcase name="testMeetSearchCriteriaDoesNotMeet()" classname="pl.edu.agh.school.SchoolClassTest" time="0.002"/>
+  <testcase name="testNameAndProfile()" classname="pl.edu.agh.school.SchoolClassTest" time="0.001"/>
+  <testcase name="testAddStudent()" classname="pl.edu.agh.school.SchoolClassTest" time="0.007"/>
+  <testcase name="testAddSubject()" classname="pl.edu.agh.school.SchoolClassTest" time="0.002"/>
+  <testcase name="testSchedule()" classname="pl.edu.agh.school.SchoolClassTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
