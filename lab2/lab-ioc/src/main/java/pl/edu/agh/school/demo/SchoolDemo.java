@@ -7,6 +7,8 @@ import java.util.Collection;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.google.inject.Key;
+import com.google.inject.name.Names;
 import pl.edu.agh.guice.SchoolModule;
 import pl.edu.agh.logger.ConsoleMessageSerializer;
 import pl.edu.agh.logger.FileMessageSerializer;

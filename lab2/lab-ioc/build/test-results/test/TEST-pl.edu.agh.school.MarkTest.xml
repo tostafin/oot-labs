@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pl.edu.agh.school.MarkTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-21T16:46:07" hostname="d17-427-pc-07.ipa.ii.agh.edu.pl" time="0.001">
+<testsuite name="pl.edu.agh.school.MarkTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-26T21:38:35" hostname="DESKTOP-N2S9NON" time="0.001">
   <properties/>
   <testcase name="testMark()" classname="pl.edu.agh.school.MarkTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

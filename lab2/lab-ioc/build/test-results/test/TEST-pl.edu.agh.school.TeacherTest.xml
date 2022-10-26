@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pl.edu.agh.school.TeacherTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-10-21T16:46:07" hostname="d17-427-pc-07.ipa.ii.agh.edu.pl" time="0.007">
+<testsuite name="pl.edu.agh.school.TeacherTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-10-26T21:38:35" hostname="DESKTOP-N2S9NON" time="0.019">
   <properties/>
-  <testcase name="testMeetsSearchCriteriaNotFound()" classname="pl.edu.agh.school.TeacherTest" time="0.001"/>
-  <testcase name="testAddSubject()" classname="pl.edu.agh.school.TeacherTest" time="0.001"/>
-  <testcase name="testMeetsSearchCriteria()" classname="pl.edu.agh.school.TeacherTest" time="0.001"/>
-  <testcase name="testGetSchedule()" classname="pl.edu.agh.school.TeacherTest" time="0.002"/>
-  <testcase name="testPersonalData()" classname="pl.edu.agh.school.TeacherTest" time="0.001"/>
+  <testcase name="testMeetsSearchCriteriaNotFound()" classname="pl.edu.agh.school.TeacherTest" time="0.003"/>
+  <testcase name="testAddSubject()" classname="pl.edu.agh.school.TeacherTest" time="0.003"/>
+  <testcase name="testMeetsSearchCriteria()" classname="pl.edu.agh.school.TeacherTest" time="0.003"/>
+  <testcase name="testGetSchedule()" classname="pl.edu.agh.school.TeacherTest" time="0.003"/>
+  <testcase name="testPersonalData()" classname="pl.edu.agh.school.TeacherTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

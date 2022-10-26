@@ -5,7 +5,6 @@ import java.util.List;
 
 import pl.edu.agh.logger.Logger;
 import pl.edu.agh.school.persistence.IPersistenceManager;
-import pl.edu.agh.school.persistence.SerializablePersistenceManager;
 
 import javax.inject.Inject;
 

@@ -9,6 +9,7 @@ import pl.edu.agh.school.SchoolClass;
 import pl.edu.agh.school.Teacher;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 public final class SerializablePersistenceManager implements IPersistenceManager {
 
@@ -21,6 +22,16 @@ public final class SerializablePersistenceManager implements IPersistenceManager
     public SerializablePersistenceManager() {
         teachersStorageFileName = "teachers.dat";
         classStorageFileName = "classes.dat";
+    }
+
+    @Inject
+    public void setTeachersStorageFileName(@Named("teachers") String teachersStorageFileName) {
+        this.teachersStorageFileName = teachersStorageFileName;
+    }
+
+    @Inject
+    public void setClassStorageFileName(@Named("class") String classStorageFileName) {
+        this.classStorageFileName = classStorageFileName;
     }
 
     public void saveTeachers(List<Teacher> teachers) {

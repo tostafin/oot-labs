@@ -1,46 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pl.edu.agh.iisg.to.OrmTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-10-20T22:34:50" hostname="DESKTOP-N2S9NON" time="1.728">
+<testsuite name="pl.edu.agh.iisg.to.OrmTest" tests="8" skipped="0" failures="2" errors="0" timestamp="2022-10-23T13:05:15" hostname="DESKTOP-N2S9NON" time="2.585">
   <properties/>
-  <testcase name="enrollStudentTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="1.577"/>
-  <testcase name="createStudentTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.029"/>
-  <testcase name="findStudentIndexTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.011"/>
-  <testcase name="createReportTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.07"/>
-  <testcase name="createCourseTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.027"/>
-  <testcase name="findCourseTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.011"/>
+  <testcase name="enrollStudentTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="2.354"/>
+  <testcase name="createStudentTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.035"/>
+  <testcase name="courseStudentListTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.032">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;2&gt; but was: &lt;0&gt;
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:152)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:147)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:327)
+	at app//pl.edu.agh.iisg.to.OrmTest.courseStudentListTest(OrmTest.java:130)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.4.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.4.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:515)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:105)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.base@17.0.4.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.base@17.0.4.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.4.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.4.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="findStudentIndexTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.015"/>
+  <testcase name="createReportTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.079"/>
+  <testcase name="createCourseTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.026"/>
+  <testcase name="findCourseTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.013"/>
+  <testcase name="gradeStudentTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.026">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;0&gt; but was: &lt;1&gt;
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:152)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:147)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:327)
+	at app//pl.edu.agh.iisg.to.OrmTest.gradeStudentTest(OrmTest.java:150)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.4.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.4.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:515)
+	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:171)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:167)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:114)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:59)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:105)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.base@17.0.4.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at java.base@17.0.4.1/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:110)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:72)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:71)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.4.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.4.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.4.1/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[paź 21, 2022 12:34:50 AM org.hibernate.Version logVersion
+  <system-err><![CDATA[paź 23, 2022 3:05:15 PM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate Core {5.2.2.Final}
-paź 21, 2022 12:34:50 AM org.hibernate.cfg.Environment <clinit>
+paź 23, 2022 3:05:15 PM org.hibernate.cfg.Environment <clinit>
 INFO: HHH000206: hibernate.properties not found
-paź 21, 2022 12:34:50 AM org.hibernate.cfg.Environment buildBytecodeProvider
+paź 23, 2022 3:05:15 PM org.hibernate.cfg.Environment buildBytecodeProvider
 INFO: HHH000021: Bytecode provider name : javassist
-paź 21, 2022 12:34:51 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+paź 23, 2022 3:05:15 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
 INFO: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-paź 21, 2022 12:34:51 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+paź 23, 2022 3:05:16 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-paź 21, 2022 12:34:51 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+paź 23, 2022 3:05:16 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:orm-test.db]
-paź 21, 2022 12:34:51 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+paź 23, 2022 3:05:16 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=}
-paź 21, 2022 12:34:51 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+paź 23, 2022 3:05:16 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-paź 21, 2022 12:34:51 AM org.hibernate.engine.jdbc.connections.internal.PooledConnections <init>
+paź 23, 2022 3:05:16 PM org.hibernate.engine.jdbc.connections.internal.PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-paź 21, 2022 12:34:51 AM org.hibernate.dialect.Dialect <init>
+paź 23, 2022 3:05:16 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
-paź 21, 2022 12:34:51 AM org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl useContextualLobCreation
+paź 23, 2022 3:05:16 PM org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl useContextualLobCreation
 INFO: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
-paź 21, 2022 12:34:51 AM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
+paź 23, 2022 3:05:16 PM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
 INFO: HHH000398: Explicit segment value for id generator [hibernate_sequences.sequence_name] suggested; using default [default]
-paź 21, 2022 12:34:51 AM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
+paź 23, 2022 3:05:16 PM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
 INFO: HHH000398: Explicit segment value for id generator [hibernate_sequences.sequence_name] suggested; using default [default]
-paź 21, 2022 12:34:51 AM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
+paź 23, 2022 3:05:16 PM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
 INFO: HHH000398: Explicit segment value for id generator [hibernate_sequences.sequence_name] suggested; using default [default]
-paź 21, 2022 12:34:51 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e7fe6d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-paź 21, 2022 12:34:52 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1455154c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-paź 21, 2022 12:34:52 AM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+paź 23, 2022 3:05:17 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@24386839] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+paź 23, 2022 3:05:17 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@526b2f3e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+paź 23, 2022 3:05:17 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:62)
@@ -130,7 +268,7 @@ Caused by: java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:49)
 	... 76 more
 
-paź 21, 2022 12:34:52 AM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+paź 23, 2022 3:05:17 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:62)
@@ -220,17 +358,17 @@ Caused by: java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:49)
 	... 76 more
 
-paź 21, 2022 12:34:52 AM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
-INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@32fa809f'
-paź 21, 2022 12:34:52 AM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+paź 23, 2022 3:05:17 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@12a14b74'
+paź 23, 2022 3:05:17 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-paź 21, 2022 12:34:52 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+paź 23, 2022 3:05:17 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
 WARN: SQL Error: 19, SQLState: null
-paź 21, 2022 12:34:52 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+paź 23, 2022 3:05:17 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
 ERROR: [SQLITE_CONSTRAINT]  Abort due to constraint violation (UNIQUE constraint failed: student.index_number)
-paź 21, 2022 12:34:52 AM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
+paź 23, 2022 3:05:17 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
 INFO: HHH000010: On release of batch it still contained JDBC statements
-paź 21, 2022 12:34:52 AM org.hibernate.internal.ExceptionMapperStandardImpl mapManagedFlushFailure
+paź 23, 2022 3:05:17 PM org.hibernate.internal.ExceptionMapperStandardImpl mapManagedFlushFailure
 ERROR: HHH000346: Error during managed flush [org.hibernate.exception.GenericJDBCException: could not execute statement]
 javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute statement
 	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:147)
@@ -330,13 +468,13 @@ Caused by: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint v
 	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:86)
 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
 	... 79 more
-paź 21, 2022 12:34:52 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+paź 23, 2022 3:05:17 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
 WARN: SQL Error: 19, SQLState: null
-paź 21, 2022 12:34:52 AM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+paź 23, 2022 3:05:17 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
 ERROR: [SQLITE_CONSTRAINT]  Abort due to constraint violation (UNIQUE constraint failed: course.name)
-paź 21, 2022 12:34:52 AM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
+paź 23, 2022 3:05:17 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
 INFO: HHH000010: On release of batch it still contained JDBC statements
-paź 21, 2022 12:34:52 AM org.hibernate.internal.ExceptionMapperStandardImpl mapManagedFlushFailure
+paź 23, 2022 3:05:17 PM org.hibernate.internal.ExceptionMapperStandardImpl mapManagedFlushFailure
 ERROR: HHH000346: Error during managed flush [org.hibernate.exception.GenericJDBCException: could not execute statement]
 javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute statement
 	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:147)

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pl.edu.agh.school.LessonTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-21T16:46:06" hostname="d17-427-pc-07.ipa.ii.agh.edu.pl" time="0.272">
+<testsuite name="pl.edu.agh.school.LessonTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-26T21:38:34" hostname="DESKTOP-N2S9NON" time="0.789">
   <properties/>
-  <testcase name="testGetSubject()" classname="pl.edu.agh.school.LessonTest" time="0.268"/>
-  <testcase name="testGetDate()" classname="pl.edu.agh.school.LessonTest" time="0.001"/>
+  <testcase name="testGetSubject()" classname="pl.edu.agh.school.LessonTest" time="0.783"/>
+  <testcase name="testGetDate()" classname="pl.edu.agh.school.LessonTest" time="0.003"/>
   <testcase name="testRegisterPresence()" classname="pl.edu.agh.school.LessonTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

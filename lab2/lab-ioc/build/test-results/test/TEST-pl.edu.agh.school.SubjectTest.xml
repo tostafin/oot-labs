@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pl.edu.agh.school.SubjectTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-10-21T16:46:07" hostname="d17-427-pc-07.ipa.ii.agh.edu.pl" time="0.037">
+<testsuite name="pl.edu.agh.school.SubjectTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-10-26T21:38:35" hostname="DESKTOP-N2S9NON" time="0.077">
   <properties/>
-  <testcase name="testTeacher()" classname="pl.edu.agh.school.SubjectTest" time="0.026"/>
-  <testcase name="testAddMark()" classname="pl.edu.agh.school.SubjectTest" time="0.001"/>
-  <testcase name="testAddTerm()" classname="pl.edu.agh.school.SubjectTest" time="0.005"/>
-  <testcase name="testGetName()" classname="pl.edu.agh.school.SubjectTest" time="0.0"/>
-  <testcase name="testAddLesson()" classname="pl.edu.agh.school.SubjectTest" time="0.001"/>
+  <testcase name="testTeacher()" classname="pl.edu.agh.school.SubjectTest" time="0.052"/>
+  <testcase name="testAddMark()" classname="pl.edu.agh.school.SubjectTest" time="0.002"/>
+  <testcase name="testAddTerm()" classname="pl.edu.agh.school.SubjectTest" time="0.014"/>
+  <testcase name="testGetName()" classname="pl.edu.agh.school.SubjectTest" time="0.002"/>
+  <testcase name="testAddLesson()" classname="pl.edu.agh.school.SubjectTest" time="0.002"/>
   <testcase name="testAddSemesterMark()" classname="pl.edu.agh.school.SubjectTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
