@@ -1,9 +1,11 @@
+import io.reactivex.rxjava3.core.Observable;
 import model.Photo;
 import util.PhotoDownloader;
 import util.PhotoProcessor;
 import util.PhotoSerializer;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -29,14 +31,24 @@ public class PhotoCrawler {
     }
 
     public void downloadPhotoExamples() {
-        try {
-            photoDownloader.getPhotoExamples().subscribe(photoSerializer::savePhoto);
-        } catch (IOException e) {
-            log.log(Level.SEVERE, "Downloading photo examples error", e);
-        }
+        photoDownloader.getPhotoExamples()
+                .compose(this::processPhotoStream)
+                .subscribe(photoSerializer::savePhoto);
     }
 
     public void downloadPhotosForQuery(String query) {
-        photoDownloader.searchForPhotos(query).subscribe(photoSerializer::savePhoto, Throwable::printStackTrace);
+        photoDownloader.searchForPhotos(query)
+                .subscribe(photoSerializer::savePhoto, Throwable::printStackTrace);
+    }
+
+    public void downloadPhotosForMultipleQueries(List<String> queries) {
+        photoDownloader.searchForPhotos(queries)
+                .compose(this::processPhotoStream)
+                .subscribe(photoSerializer::savePhoto);
+    }
+
+    private Observable<Photo> processPhotoStream(Observable<Photo> photoObservable) {
+        return photoObservable.filter(photoProcessor::isPhotoValid)
+                .map(photoProcessor::convertToMiniature);
     }
 }
