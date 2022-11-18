@@ -36,6 +36,9 @@ public class AccountOverviewController {
 	private TableColumn<Transaction, BigDecimal> inflowColumn;
 
 	@FXML
+	private Button addButton;
+
+	@FXML
 	private Button editButton;
 
 	@FXML
@@ -53,6 +56,14 @@ public class AccountOverviewController {
 		editButton.disableProperty().bind(Bindings.size(transactionsTable.getSelectionModel().getSelectedItems())
 				.isNotEqualTo(1));
 		deleteButton.disableProperty().bind(Bindings.isEmpty(transactionsTable.getSelectionModel().getSelectedItems()));
+	}
+
+	@FXML
+	private void handleAddAction(ActionEvent event) {
+		Transaction transaction = Transaction.newTransaction();
+		if (appController.showTransactionEditDialog(transaction)) {
+			data.addTransaction(transaction);
+		}
 	}
 
 	@FXML
